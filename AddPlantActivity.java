@@ -1,0 +1,45 @@
+package com.example.kawtherrouabhi.lightleaf;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+
+public class AddPlantActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_plant);
+
+        ImageButton back = (ImageButton) findViewById(R.id.backtomygarden);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeintent = new Intent(AddPlantActivity.this, MyGardenActivity.class);
+                startActivity(homeintent);
+            }
+        });
+
+        ImageButton addplant = (ImageButton) findViewById(R.id.done);
+        addplant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent addintent = new Intent(AddPlantActivity.this, MyGarden2Activity.class);
+                startActivity(addintent);
+            }
+        });
+
+    }
+
+    public void GoBackView(View view) {
+        Intent i = new Intent(this, MyGardenActivity.class);
+        startActivity(i);
+    }
+
+    public void AddPlantView(View view) {
+        Intent i = new Intent(this, MyGarden2Activity.class);
+        startActivity(i);
+    }
+}

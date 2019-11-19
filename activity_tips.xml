@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_my_garden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/tips_back"
+        tools:context="com.example.kawtherrouabhi.lightleaf.MyGardenActivity">
+
+        <!--ActionBar-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#2E7D32"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back_arrow"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/backtohome"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tips_actionbar"/>
+
+        </RelativeLayout>
+
+        <!--SEARCH PLANTS-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99ffffff"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:queryHint="Search Plants"
+                android:iconifiedByDefault="false">
+
+            </SearchView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="my garden"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+        <!--PLANT 1-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/appleicon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plant3"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 2-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pumpkinicon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plant4"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 3-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/roseicon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plant5"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 4-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/strawberrytips">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/strawberryicon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plant1"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 5-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/watermelonicon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plant2"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a-z"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+        <!--PLANT 1-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/asparagus_icon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Asparagi"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 2-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bananas_icon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Bananas"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--PLANT 3-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#99ffffff"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/carnation_icon" />
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Carnations"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
